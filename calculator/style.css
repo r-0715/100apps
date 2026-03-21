@@ -27,6 +27,8 @@
     border: 2px 2px 2px 2px;
     padding: 1px 6px 1px 6px;
     margin: 1px 0px 1px 0px;
+    color: white;
+    font-size: 16px;
     background-color: gray;
 }
 .buttons:hover{
