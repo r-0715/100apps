@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     const reset_btn = document.getElementById("reset");
 
+    const canvus = document.getElementById("light");
+
     set_h.addEventListener('click',()=>{
         //
         let hours = Number(set_h.value);
@@ -51,7 +53,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
             time = hours*3600 + minutes*60 + second;
 
+            if(time === 0){
+                return;
+            }
+
             strat_btn.value = "other";
+
+            set_h.disabled = true;
+            set_m.disabled = true;
+            set_s.disabled = true;
         }
         //console.log(time);
         id = setInterval(() => {
@@ -64,6 +74,18 @@ document.addEventListener('DOMContentLoaded',()=>{
             if(hours < 10) display_h.innerHTML = "0"+hours; else display_h.innerHTML = hours;
             if(minutes < 10) display_m.innerHTML = "0"+minutes; else display_m.innerHTML = minutes;
             if(second < 10) display_s.innerHTML = "0"+second; else display_s.innerHTML = second;
+
+            if(time === 0){
+                clearInterval(id);
+
+                strat_btn.disabled = true;
+                stop_btn.disabled = true;
+
+                canvus.style.backgroundColor = "#f00";
+                canvus.style.boxShadow = "0 0 4px 4px #f77";
+
+                return;
+            }
         }, 1000);
     });
 
@@ -85,12 +107,19 @@ document.addEventListener('DOMContentLoaded',()=>{
         set_m.value = "0";
         set_s.value = "0";
 
+        canvus.style.backgroundColor = '#900';
+        canvus.style.boxShadow = 'none';
+
         strat_btn.value = "first";
 
         clearInterval(id);
 
         strat_btn.disabled = false;
         stop_btn.disabled = true;
+
+        set_h.disabled = false;
+        set_m.disabled = false;
+        set_s.disabled = false;
     });
     //
 });
