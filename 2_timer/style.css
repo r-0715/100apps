@@ -1,0 +1,47 @@
+#main{
+    width: 288px;
+    height: 288px;
+    padding: 16px 16px 16px 16px;
+    background-color: gray;
+}
+
+#d{
+    margin: 0px 0px 32px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#mark{
+    margin: 0px 8px 0px 0px;
+    font-size: 48px;
+}
+
+.display{
+    width: 86;
+    height: auto;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 8px 0px 0px;
+    font-size: 48px;
+    color: white;
+    background-color: black;
+}
+
+#display_s{
+    width: 36px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+}
+
+#set{
+    display: flex;
+    justify-content: center;
+}
+
+.select{
+    width: 64px;
+    margin: 0px 8px 0px 0px;
+    border: 2px 2px 2px 2px;
+    border-color: red;
+    text-align: center;
+}
