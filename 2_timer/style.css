@@ -34,6 +34,7 @@
 }
 
 #set{
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
 }
@@ -41,7 +42,34 @@
 .select{
     width: 64px;
     margin: 0px 8px 0px 0px;
-    border: 2px 2px 2px 2px;
-    border-color: red;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(60, 73, 73);
+    color: white;
     text-align: center;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    width: 64px;
+    height: 64px;
+    margin: 0px 32px 0px 32px;
+    border-radius: 50%;
+}
+
+#r_btn{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0px 0px 0px;
+}
+
+#reset{
+    width: 80px;
+    height: 24px;
+
 }
