@@ -1,0 +1,42 @@
+#main{
+    width: 288px;
+    height: auto;
+    padding: 16px 16px 16px;
+    background-color: #585;
+
+    display: flex;
+    justify-content: center;
+}
+
+#display{
+    width: 288px;
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    background-color: #585;
+
+    display: flex;
+    justify-content: center;
+}
+
+#canvas{
+    border: 4px solid;
+    border-color: #000;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.dis{
+    font-size: 32px;
+    margin: auto 8px auto 8px;
+    border: 4px solid #fff;
+    background-color: white;
+    text-align: center;
+}
+
+#display_seconds{
+    font-size: 24px;
+}
+
+#mark{
+    font-size: 32px;
+}
